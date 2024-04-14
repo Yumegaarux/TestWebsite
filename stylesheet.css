@@ -6,7 +6,7 @@ body {
     background-color: #f9fae8;
 }
 
-.header {
+.nav {
     display: flex;
     overflow: hidden;
     justify-content: space-between;
@@ -14,7 +14,7 @@ body {
     color: white;
     box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.3); 
     height: 70px;
-    padding-right: 100%;
+    width: 100%;
     z-index: 1000;
     left: 0;
     top: 0;
@@ -22,23 +22,41 @@ body {
     align-items: center;
 }
 
-.header h1{
+.nav h1{
     font-size: 30px;
-    color: #f9fae8;
-    text-align: left;
     margin-left: 15px;
 }
 
-.side-header{
-    margin-left: 700px;
-    font-size: 20px;
-    text-align: center;
-    background: #e32a00;
-    color: white;
-    border: none;
+.nav ul{
+    float: right;
+    display: flex;
 }
 
-.side-header button:hover{
+.nav li{
+    padding-right: 10px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.nav li a{
+    font-size: 20px;
+    padding: 25px 10px 25px 10px;
+    color: white;
+    background-color:#c92500;
+    text-decoration: none;
+}
+
+#btn{
+    background-color: rgb(253, 255, 239);
+    color: black;
+}
+
+#btn:hover{
+    transition: 0.6s ease-in-out;
+    background-color: black;
+    color: white;
+}
+.nav li a:hover{
     transition: 0.6s ease-in-out;
     background-color: white;
     color: black;
