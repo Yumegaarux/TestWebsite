@@ -56,8 +56,36 @@ body {
     background-color: black;
     color: white;
 }
+
+.dropdown-content{
+    display: none;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.3); 
+    margin-top: 20px;  
+}
+
+.dropdown-content a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 12px 10px;
+}
+
+#drop-down:hover .dropdown-content{
+    transition: ease-in-out 0.5s;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: antiquewhite;
+    transition: 0.6s ease-in-out;
+}
+
 .nav li a:hover{
     transition: 0.6s ease-in-out;
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
     background-color: white;
     color: black;
 }
