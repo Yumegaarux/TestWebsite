@@ -113,6 +113,7 @@ body {
     float: right;
     margin-right: 5px;
     border-radius: 10px;
+    margin: 10px;
 }
 
 .container{
@@ -136,5 +137,6 @@ p{
     text-align: justify;
     margin-right: 5px;
 }
+ 
 
 
