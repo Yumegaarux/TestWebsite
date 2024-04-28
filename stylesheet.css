@@ -21,6 +21,9 @@ body {
     position: fixed;
     align-items: center;
 }
+.section{
+    display: none;
+}
 
 .nav h1{
     font-size: 30px;
@@ -137,6 +140,11 @@ p{
     text-align: justify;
     margin-right: 5px;
 }
- 
+
+#section1:checked ~ .content #content1,
+  #section2:checked ~ .content #content2,
+  #section3:checked ~ .content #content3 {
+    display: block;
+  }
 
 
