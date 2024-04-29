@@ -12,15 +12,21 @@
     top: 0;
     position: fixed;
     align-items: center;
+
 }
 
 .container{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .img{
-    
+    margin-top: 90px;
+    width: 185px;
+    height: 250px;
+    border-radius: 10px;
 }
+
 
 
