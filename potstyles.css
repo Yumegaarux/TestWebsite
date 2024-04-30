@@ -1,3 +1,7 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .nav {
     display: flex;
     overflow: hidden;
@@ -12,13 +16,13 @@
     top: 0;
     position: fixed;
     align-items: center;
-
 }
 
 .container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 25px;
+    float: left;
 }
 
 .img{
@@ -26,6 +30,11 @@
     width: 185px;
     height: 250px;
     border-radius: 10px;
+}
+
+p{
+    width: 185px;
+    text-align: justify;
 }
 
 
