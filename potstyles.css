@@ -2,6 +2,15 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: #f9fae8;
+}
+
+#logo{
+    text-decoration: none;
+    color: white;
+}
+
 .nav {
     display: flex;
     overflow: hidden;
@@ -18,11 +27,88 @@ html{
     align-items: center;
 }
 
-.container{
-    text-align: justify;
-    padding-left: 25px;
-    padding-right: 25px;
-    float: left;
+.nav h1{
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.nav ul{
+    float: right;
+    display: flex;
+}
+
+.nav li{
+    padding-right: 10px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.nav li a{
+    font-size: 20px;
+    padding: 25px 10px 25px 10px;
+    color: white;
+    background-color:#c92500;
+    text-decoration: none;
+}
+
+#btn{
+    background-color: rgb(253, 255, 239);
+    color: black;
+}
+
+#btn:hover{
+    transition: 0.6s ease-in-out;
+    background-color: black;
+    color: white;
+}
+
+.dropdown-content{
+    display: none;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.3); 
+    margin-top: 20px;  
+}
+
+.dropdown-content a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 12px 10px;
+}
+
+#drop-down:hover .dropdown-content{
+    transition: ease-in-out 0.5s;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: antiquewhite;
+    transition: 0.6s ease-in-out;
+}
+
+.nav li a:hover{
+    transition: 0.6s ease-in-out;
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+    background-color: white;
+    color: black;
+}
+
+ /* Nav */
+
+#container{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.content{
+    margin-left: 105px;
 }
 
 .img{
@@ -32,10 +118,19 @@ html{
     border-radius: 10px;
 }
 
-p{
-    width: 185px;
-    text-align: justify;
+.name{
+    font-weight: bold;
 }
+
+/* Hover */
+
+.img:hover{
+    width: 188px;
+    height: 253px;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
 
 
 
