@@ -1,0 +1,113 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/images/sigma.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+
+#logo{
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    background:  #222222;
+    color: white;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.3); 
+    height: 70px;
+    width: 100%;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    position: fixed;
+    align-items: center;
+    animation: myanimation 0.6s;
+}
+
+@keyframes myanimation {
+    0% {background-color: #e32a00;}
+}
+
+.nav h1{
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.nav ul{
+    float: right;
+    display: flex;
+}
+
+.nav li{
+    padding-right: 10px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.nav li a{
+    font-size: 20px;
+    padding: 25px 10px 25px 10px;
+    color: white;
+    background-color:#141414;
+    text-decoration: none;
+    animation: buttonanimation 0.6s;
+}
+
+@keyframes buttonanimation {
+    0% {background-color: #c92500;}
+}
+
+#btn{
+    background-color: rgb(220, 0, 0);
+    color: black;
+}
+
+#btn:hover{
+    transition: 0.6s ease-in-out;
+    background-color: black;
+    color: white;
+}
+
+.dropdown-content{
+    display: none;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.3); 
+    margin-top: 20px;  
+}
+
+.dropdown-content a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 12px 10px;
+}
+
+#drop-down:hover .dropdown-content{
+    transition: ease-in-out 0.5s;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: antiquewhite;
+    transition: 0.6s ease-in-out;
+}
+
+.nav li a:hover{
+    transition: 0.6s ease-in-out;
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+    background-color: white;
+    color: black;
+}
+
