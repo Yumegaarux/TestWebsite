@@ -122,6 +122,10 @@ body {
     font-weight: bold;
 }
 
+
+.checked{
+    color: #e32a00;
+}
 /* Hover */
 
 .img:hover{
